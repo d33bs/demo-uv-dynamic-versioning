@@ -1,6 +1,6 @@
-# uv-dynamic-versioning
+# demo-uv-dynamic-versioning
 
-Demonstrating Pythonic uv usage with dynamic versioning.
+Demonstrating Pythonic [uv](https://docs.astral.sh/uv/) usage with dynamic versioning capabilities from [setuptools-scm](https://github.com/pypa/setuptools-scm).
 
 ## Development
 
