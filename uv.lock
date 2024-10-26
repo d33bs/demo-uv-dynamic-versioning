@@ -30,35 +30,33 @@ wheels = [
 
 [[package]]
 name = "example-package"
-version = "0.1.dev2+g8c488c0.d20241021"
+version = "0.1.dev3+g48e61b0"
 source = { editable = "." }
 dependencies = [
     { name = "pyfiglet" },
 ]
 
-[package.optional-dependencies]
+[package.dev-dependencies]
 dev = [
     { name = "poethepoet" },
     { name = "pre-commit" },
     { name = "pytest" },
-]
-
-[package.dev-dependencies]
-dev = [
     { name = "setuptools-scm" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "example-package" },
-    { name = "poethepoet", marker = "extra == 'dev'", specifier = ">=0.29.0" },
-    { name = "pre-commit", marker = "extra == 'dev'", specifier = ">=4.0.1" },
     { name = "pyfiglet", specifier = ">=1.0.2" },
-    { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.3.3" },
 ]
 
 [package.metadata.requires-dev]
-dev = [{ name = "setuptools-scm", specifier = ">=8.1.0" }]
+dev = [
+    { name = "poethepoet", specifier = ">=0.29" },
+    { name = "pre-commit", specifier = ">=4.0.1" },
+    { name = "pytest", specifier = ">=8.3.3" },
+    { name = "setuptools-scm", specifier = ">=8.1.0" },
+]
 
 [[package]]
 name = "filelock"
